@@ -18,7 +18,9 @@ go build golinks.go
 
 
 ## Run
-./golinks
+
+`./golinks`
+
 Above will start a http server listening on port 8085.
 
 ## Usage
@@ -33,6 +35,6 @@ There are three apis, viz
       - returns record corresponding to the <hash> if one exists. Else it
         returns an empty record with empty `url` field, and created and update
         timestamps set to 0
-    3. View api - `curl http://0:8085/v/<hash>`
+   3. View api - `curl http://0:8085/v/<hash>`
        - redirects to saved url correspoding to `<hash>` else returns 404
          status with a NOT FOUND message
